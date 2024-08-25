@@ -1,0 +1,30 @@
+<!-- Open source project by https://github.com/Nyx3-wq -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condo keygen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <label for="a">Place your roblox username in here</label>
+        <input type="text" id="a" placeholder="Roblox user">
+        <button id="gen">Generate</button>
+        <div id="c"></div>
+    </div>
+
+    <script type="module">
+        import { d } from './keygen.js';
+        function enc() {
+            const a = document.getElementById('a');
+            const e = a.value;
+            const f = e ? d(e) : '';
+            document.getElementById('c').innerText = `Key: ${f}`;
+        }
+        document.getElementById('gen').addEventListener('click', enc);
+    </script>
+</body>
+</html>
